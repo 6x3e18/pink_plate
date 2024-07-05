@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Pink</title>
+    <style>
+        body {
+            background-color: pink;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+        .logo {
+            width: 100%;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            overflow: hidden; /* Ensure the border-radius is applied */
+        }
+        .logo img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensure the image covers the container */
+        }
+        .text {
+            width: 100%;
+            max-width: 800px;
+            font-size: 20px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .text {
+                font-size: 18px;
+                padding: 15px;
+            }
+            .logo img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .text {
+                font-size: 16px;
+                padding: 10px;
+            }
+            .logo img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="smile.png" alt="Palm Pink Logo">
+        </div>
+        <div class="text">
+            Welcome to Palm Pink, where the essence of tranquility and beauty converge. Explore the soothing shades and vibrant hues that embody the spirit of a serene paradise.
+        </div>
+    </div>
+</body>
+</html>
